@@ -15,6 +15,6 @@ export const MovieSearch = () => {
     <input type="text" placeholder='Type something to search...' className="search-textbox" onChange={debounce(onSearch)} />
     <br />
     <br />
-    <MoviesList search={search} />
+    <MoviesList search={search} maxResults={5} />
   </div>
 }
