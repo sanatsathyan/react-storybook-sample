@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+.movie-search-container {
+  width: 1245px;
+  font-family: 'Oxygen', sans-serif;
+  margin: 0 auto;
+  h1.page-header {
+    color: #EEEEEE;
+    text-align: center;
+    font-size: 48px;
+  }
+  .search-textbox {
+    background: transparent;
+    border: none;
+    color: #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+    padding: 12px;
+    width: calc(100% - 32px);
+    font-size: 32px;
+    outline: none;
+  
+    &:focus-within {
+      border-bottom-color: #eeeeee;
+    }
+  }
+}

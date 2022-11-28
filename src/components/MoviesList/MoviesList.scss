@@ -1,0 +1,9 @@
+.movies-list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .movie-card {
+    width: calc(25% - 24px);
+    margin: 12px;
+  }
+}

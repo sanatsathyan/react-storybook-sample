@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+.movie-card-container {
+  display: flex;
+  width: 225px;
+  height: 338px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin: 12px;
+  font-family: 'Oxygen', sans-serif;
+  img {
+    width: 100%;
+    height: auto;
+    opacity: 0.75;
+  }
+  h1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: normal;
+    background: rgba(112, 26, 26, 0.75);
+    color: #FFF;
+    padding: 12px;
+    margin: 0;
+  }
+  h4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 8px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background: red;
+    font-size: 10px;
+    font-weight: normal;
+    border-radius: 8px;
+  }
+}
