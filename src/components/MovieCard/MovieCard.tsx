@@ -1,14 +1,7 @@
 import { Movie } from "../../interfaces/movies"
 import "./MovieCard.scss"
 
-type Props = {
-  Poster: string;
-  Title: string;
-  Year: string;
-  Type: string;
-}
-
-export const MovieCard = ({Poster,Title,Year,Type}: Props) => {
+export const MovieCard = ({Poster,Title,Year,Type}: Movie) => {
 
   return <div className='movie-card-container'>
     <img src={Poster === "N/A" ? require('../../images/no-image-available.png') : Poster} alt={Title} />

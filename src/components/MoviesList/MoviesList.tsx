@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './MoviesList.scss'
 import { MovieCard } from '../MovieCard/MovieCard';
 import { Movie } from '../../interfaces/movies';
+import { getAxios } from '../../common/api';
 
 type Props = {
   search: string;
@@ -18,8 +19,7 @@ export const MoviesList = ({ search, maxResults }: Props) => {
       return;
     }
     setLoading(true);
-    fetch(`https://www.omdbapi.com/?s=${search}&apikey=ab258a06`)
-      .then(res => res.json())
+    getAxios(`https://www.omdbapi.com/`, {s: search, apikey: 'ab258a06'})
       .then(res => {
         setMovies(res.Search && res.Search.slice(0,maxResults));
         setLoading(false);

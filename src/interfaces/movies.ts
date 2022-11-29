@@ -1,6 +1,6 @@
 
 export interface Movie {
-  imdbID: string;
+  imdbID?: string;
   Type: string;
   Title: string;
   Poster: string;
